@@ -10,7 +10,7 @@
     ],
     "themes": [
         "tiddlywiki/vanilla",
-        "tiddlywiki/snowwhite".
+        "tiddlywiki/snowwhite",
         "nico/notebook"
     ],
     "build": {
