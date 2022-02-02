@@ -1,0 +1,5 @@
+.DS_Store
+.env
+credentials.csv
+node_modules
+tiddlers/*.tid
