@@ -5,11 +5,13 @@
         "tiddlywiki/filesystem",
         "tiddlywiki/highlight",
         "tiddlywiki/markdown",
-        "tiddlywiki/menubar"
+        "tiddlywiki/menubar",
+        "nico/notebook-mobile"
     ],
     "themes": [
         "tiddlywiki/vanilla",
-        "tiddlywiki/snowwhite"
+        "tiddlywiki/snowwhite".
+        "nico/notebook"
     ],
     "build": {
         "index": [
