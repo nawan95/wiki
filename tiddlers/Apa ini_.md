@@ -1,13 +1,3 @@
-caption: Apa ini?
-created: 20220202153847032
-custom-menu-styles: float: left;
-modified: 20220202155131554
-tags: $:/tags/MenuBar
-target: Apa ini?
-title: Apa ini?
-type: text/x-markdown
-
-
 # Selamat Datang!
 
 Kalian mungkin tidak sengaja menemukan situs kecil ini. Kalau kalian ingin tahu, situs kecil ini merupakan wiki pribadi milik Nawan. Situs ini akan menjadi semacam [[Basis pengetahuan]] pribadi saya. Bisa juga situs ini disebut sebagai [Microsoft OneNote](https://id.wikipedia.org/w/index.php?title=Microsoft_OneNote&oldid=18708198) pribadi atau catatan pribadi, hanya saja ini bisa diakses online oleh dan diedit siapa saja.
