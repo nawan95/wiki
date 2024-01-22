@@ -5,6 +5,12 @@ Seperti //email// atau SMS, XMPP ini terfederasi, dengan kata lain pengguna dari
 = Daftar Penyedia atau Peladen Publik
 Sebelum mendaftar akun, kamu harus menentukan di mana kamu akan membuat akun XMPP. Ada banyak penyedia atau peladen (server) publik yang membuka registrasi. Perlu dicatat bahwa setiap penyedia atau peladen XMPP dapat memiliki fitur yang bervariasi. Misalnya penyedia atau peladen C mendukung //[[idwiki>Enkripsi ujung ke ujung | end-to-end encryption]]// sedangkan penyedia B tidak.
 
+= Glosarium
+* **XMPP**: e**X**tensible **M**essaging and **P**resence **P**rotocol
+* **Jabber**: XMPP
+* **MUC**: Multi-User Chat; groupchat
+* **JID**: Jabber ID: alamat akun XMPP
+
 = Trivia
 * [[WhatsApp]] diketahui menggunakan XMPP sebagai protokol tetapi tidak mengaktifkan fungsi federasi.
 * Permainan PUBG menggunakan XMPP untuk presensi, percakapan dalam permainan, dan //gamematching//.
