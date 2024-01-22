@@ -21,3 +21,13 @@ Tentu saja kamu harus mengganti `password` dengan kata sandi yang benar-benar am
 ** Ekspor database dengan kompresi: `mysqldump dbname | gzip -c - > dbname_$(date -u -Iseconds).sql.gz`
 * Mengembalikan backup ke database: `mysql dbname < backup.sql`
 ** Dengan kompresi: `gunzip backup.sql.gz` kemudian jalankan perintah di atas.
+
+= Postgres
+* Menampilkan DB: `\l`
+* Membuat pengguna: `CREATE ROLE app_user WITH LOGIN ENCRYPTED PASSWORD 'password';`
+** Sebagai alternatif, jalankan perintah berikut dengan `sudo`: `sudo -u postgres createuser -P app_user`
+* Buat database: `CREATE DATABASE app WITH OWNER app_user ENCODING = 'UTF8';`
+** Sebagai alternatif, jalankan perintah berikut dengan `sudo`: `sudo -u postgres createdb -O app_user app`
+* Ubah pemilik DB: `ALTER DATABASE app OWNER TO new_app_user;`
+* Hubungkan/pilih database: `\c <database>`
+* Tampilkan tabel: `\dt`
