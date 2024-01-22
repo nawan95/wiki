@@ -1,0 +1,23 @@
+Beberapa perintah SQL yang penting tetapi sering saya lupakan.
+
+++**NB**: Mengkapitalisasi perintah SQL tidak wajib tetapi dianggap praktik terbaik karena bertujuan untuk memudahkan membedakan antara perintah dan argumen.++
+
+= MySQL
+== Manajemen pengguna
+* Membuat DB: `CREATE DATABASE database_name;`
+* Membuat pengguna: `CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';`
+* Memberikan izin kepada pengguna: `GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password';`
+* Menampilkan semua pengguna: `SELECT User FROM mysql.user;`
+
+Tentu saja kamu harus mengganti `password` dengan kata sandi yang benar-benar aman, `user_name` dengan sesuatu yang dapat diidentifikasi, dan hal yang sama untuk `database_name`. Bahkan jika satu pengguna per database, lebih baik menggunakan nama yang berbeda untuk setiap database.
+
+== Manajemen database
+* Menampilkan semua database: `SHOW DATABASE;`
+* Pilih database: `USE DATABASE;`
+* Menampilkan tabel: `SHOW TABLES;`
+* Menampilkan isi tabel: `SELECT * FROM table;`
+* Hapus baris: `DELETE FROM table WHERE column=value;`
+* Ekspor database untuk backup: `mysqldump dbname > dbname_$(date -u -Iseconds).sql` (jalankan sebagai perintah shell)
+** Ekspor database dengan kompresi: `mysqldump dbname | gzip -c - > dbname_$(date -u -Iseconds).sql.gz`
+* Mengembalikan backup ke database: `mysql dbname < backup.sql`
+** Dengan kompresi: `gunzip backup.sql.gz` kemudian jalankan perintah di atas.
