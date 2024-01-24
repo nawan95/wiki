@@ -1,0 +1,7 @@
+= Permission denied (publickey)
+
+```
+sudo chown -R username:username /home/username/.ssh
+sudo chmod 0700 /home/username/.ssh
+sudo chmod 0600 /home/username/.ssh/authorized_keys
+```
