@@ -1,0 +1,18 @@
+Mengingat Cloudflare bertindak sebagai reverse proxy dari situs, maka peladen web //server// asal secara default akan me-//log// alamat IP cloudflare bukan alamat asli pengunjung situs. 
+
+
+*. Enable mod_remoteip by issuing the following command:
+```
+sudo a2enmod remoteip
+```
+*.  Update the site configuration to include RemoteIPHeader CF-Connecting-IP, e.g. `/etc/apache2/sites-available/000-default.conf`
+
+```
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/html
+ServerName remoteip.andy.support
+RemoteIPHeader CF-Connecting-IP
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+```
+
