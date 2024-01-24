@@ -15,4 +15,5 @@ RemoteIPHeader CF-Connecting-IP
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
 ```
-
+= Pranala luar
+[[https://developers.cloudflare.com/support/troubleshooting/restoring-visitor-ips/restoring-original-visitor-ips/ | Restoring original visitor IPs]] di Cloudflare Docs.
