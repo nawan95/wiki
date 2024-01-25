@@ -1,0 +1,25 @@
+= Mengaktifkan HTTP/2
+== Install Apache HTTP Server
+```
+sudo apt install apache2
+```
+== Aktifkan php-fpm
+Mengingat `mod_php` tidak mendukung HTTP/2. Maka perlu mengaktifkan `php-fpm`. 
+
+Pastikan `php-fpm` telah terpasang.
+```
+sudo apt install php7.4-fpm 
+```
+Aktifkan modul  **proxy_fcgi** dan **setenvif**.
+```
+sudo a2enmod proxy_fcgi setenvif
+```
+Aktifkan php-fpm dan matikan mod_php.
+```
+sudo a2enconf php[versi]-fpm
+sudo a2dismod php7.4
+```
+Restart apache2 `sudo service apache2 restart`.
+
+= Referensi
+[[https://gist.github.com/GAS85/38eb5954a27d64ae9ac17d01bfe9898c |  How to Enable HTTP/2 in Apache 2.4 on Ubuntu 20.04]] di Github Gist.
