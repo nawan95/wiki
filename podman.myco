@@ -1,4 +1,7 @@
 **Podman** adalah alat untuk mengelola kontainer dan gambar kontainer. Berbeda dengan [[enwiki>Docker]], Podman memungkinkan pengguna untuk membuat, menjalankan, menghentikan, dan menghapus kontainer tanpa perlu //daemon// atau layanan latar belakang.
 
-== Troubleshooting
-* Kontainer //rootless// atau kontainer secara //default// tidak bisa mengakses IP //host  loopback// sehingga, semua aplikasi seperti //database// dan //web server// yang berjalan di host tidak bisa mengakses aplikasi yang berjalan di dalam kontainer. Akses //host loopback// bisa diberikan ke kontainer dengan menyertakan opsi `--net slirp4netns:allow_host_loopback=true` saat menjalankan perintah `podman run`.
+= Izinkan //host loopback//
+Kontainer //rootless// atau kontainer secara //default// tidak bisa mengakses IP //host  loopback// sehingga, semua aplikasi seperti //database// dan //web server// yang berjalan di host tidak bisa mengakses aplikasi yang berjalan di dalam kontainer. Akses //host loopback// bisa diberikan ke kontainer dengan menyertakan opsi `--net slirp4netns:allow_host_loopback=true` saat menjalankan perintah `podman run`.
+
+= Error validating CNI config file(s)
+Masalah ini diketahui merupakan [[https://bugs.launchpad.net/ubuntu/+source/libpod/+bug/2024394 | bug]] di Podman versi 3.4.4 di Ubuntu.
