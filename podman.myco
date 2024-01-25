@@ -5,3 +5,23 @@ Kontainer //rootless// atau kontainer secara //default// tidak bisa mengakses IP
 
 = Error validating CNI config file(s)
 Masalah ini diketahui merupakan [[https://bugs.launchpad.net/ubuntu/+source/libpod/+bug/2024394 | bug]] di Podman versi 3.4.4 di Ubuntu.
+
+```
+wget http://archive.ubuntu.com/ubuntu/pool/universe/g/golang-github-containernetworking-plugins/containernetworking-plugins_1.1.1+ds1-3_amd64.deb
+
+sudo apt install ./containernetworking-plugins_1.1.1+ds1-3_amd64.deb
+```
+atau mengupgrade podman ke versi terbaru (belum dites)
+
+```
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL "https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/Release.key" \
+  | gpg --dearmor \
+  | sudo tee /etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg > /dev/null
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg]\
+    https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/ /" \
+  | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:unstable.list > /dev/null
+sudo apt-get update -qq
+sudo apt-get -qq -y install podman
+```
