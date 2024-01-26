@@ -4,14 +4,14 @@
 Kontainer //rootless// atau kontainer secara //default// tidak bisa mengakses IP //host  loopback// sehingga, semua aplikasi seperti //database// dan //web server// yang berjalan di host tidak bisa mengakses aplikasi yang berjalan di dalam kontainer. Akses //host loopback// bisa diberikan ke kontainer dengan menyertakan opsi `--net slirp4netns:allow_host_loopback=true` saat menjalankan perintah `podman run`.
 
 = Error validating CNI config file(s)
-Masalah ini diketahui merupakan [[https://bugs.launchpad.net/ubuntu/+source/libpod/+bug/2024394 | bug]] di Podman versi 3.4.4 di Ubuntu.
+Masalah ini diketahui merupakan [[https://bugs.launchpad.net/ubuntu/+source/libpod/+bug/2024394 | bug]] di Podman versi 3.4.4 di Ubuntu. Seorang [[https://bugs.launchpad.net/ubuntu/+source/libpod/+bug/2024394/comments/2 | pengguna]] menyarankan untuk mengupgrade paket `containernetwork-plugins`.
 
 ```
 wget http://archive.ubuntu.com/ubuntu/pool/universe/g/golang-github-containernetworking-plugins/containernetworking-plugins_1.1.1+ds1-3_amd64.deb
 
 sudo apt install ./containernetworking-plugins_1.1.1+ds1-3_amd64.deb
 ```
-atau mengupgrade podman ke versi terbaru (belum dites)
+Sedangkan [[https://bugs.launchpad.net/ubuntu/+source/libpod/+bug/2024394/comments/12 | pengguna lain]] menyebut bahwa mengupgrade podman ke versi terbaru menggunakan repo Kubic dapat juga mengatasi masalah ini untuk sementara.
 
 ```
 sudo mkdir -p /etc/apt/keyrings
