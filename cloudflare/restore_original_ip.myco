@@ -1,19 +1,48 @@
 Mengingat Cloudflare bertindak sebagai reverse proxy dari situs, maka peladen web //server// asal secara default akan me-//log// alamat IP cloudflare bukan alamat asli pengunjung situs. 
 
 
-*. Enable mod_remoteip by issuing the following command:
+= Enable mod_remoteip by issuing the following command:
 ```
 sudo a2enmod remoteip
 ```
-*.  Update the site configuration to include RemoteIPHeader CF-Connecting-IP, e.g. `/etc/apache2/sites-available/000-default.conf`
+= Update the site configuration to include RemoteIPHeader CF-Connecting-IP, e.g. `/etc/apache2/sites-available/000-default.conf`
 
 ```
-ServerAdmin webmaster@localhost
-DocumentRoot /var/www/html
-ServerName remoteip.andy.support
+...
 RemoteIPHeader CF-Connecting-IP
+LogFormat "%a %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
+...
 ```
-= Pranala luar
+= Tambahkan //trusted proxy//
+Setelah itu tambahkan alamat IP Cloudflare ke daftar proksi tepercaya (//trusted proxy//) di `/etc/apache2/conf-available/remoteip.conf`.
+
+```
+RemoteIPHeader CF-Connecting-IP
+RemoteIPTrustedProxy 192.0.2.1 103.21.244.0/22
+RemoteIPTrustedProxy 192.0.2.2 103.22.200.0/22
+RemoteIPTrustedProxy 192.0.2.3 103.31.4.0/22
+RemoteIPTrustedProxy 192.0.2.4 104.16.0.0/13
+RemoteIPTrustedProxy 192.0.2.5 104.24.0.0/14
+RemoteIPTrustedProxy 192.0.2.6 108.162.192.0/18
+RemoteIPTrustedProxy 192.0.2.7 131.0.72.0/22
+RemoteIPTrustedProxy 192.0.2.8 141.101.64.0/18
+RemoteIPTrustedProxy 192.0.2.9 162.158.0.0/15
+RemoteIPTrustedProxy 192.0.2.10 172.64.0.0/13
+RemoteIPTrustedProxy 192.0.2.11 173.245.48.0/20
+RemoteIPTrustedProxy 192.0.2.12 188.114.96.0/20
+RemoteIPTrustedProxy 192.0.2.13 190.93.240.0/20
+RemoteIPTrustedProxy 192.0.2.14 197.234.240.0/22
+RemoteIPTrustedProxy 192.0.2.15 198.41.128.0/17
+RemoteIPTrustedProxy 192.0.2.16 2400:cb00::/32
+RemoteIPTrustedProxy 192.0.2.17 2606:4700::/32
+RemoteIPTrustedProxy 192.0.2.18 2803:f800::/32
+RemoteIPTrustedProxy 192.0.2.19 2405:b500::/32
+RemoteIPTrustedProxy 192.0.2.20 2405:8100::/32
+RemoteIPTrustedProxy 192.0.2.21 2a06:98c0::/29
+RemoteIPTrustedProxy 192.0.2.22 2c0f:f248::/32
+```
+
+= Referensi
 [[https://developers.cloudflare.com/support/troubleshooting/restoring-visitor-ips/restoring-original-visitor-ips/ | Restoring original visitor IPs]] di Cloudflare Docs.
