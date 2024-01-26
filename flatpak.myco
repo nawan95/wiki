@@ -1,0 +1,14 @@
+Flatpak adalah perangkat lunak Linux yang memungkinkan pengguna untuk menginstal dan menjalankan perangkat lunak dalam lingkungan sandbox. Ini berarti perangkat lunak diisolasi dari sistem dan hanya dapat mengakses sumber daya yang diizinkan oleh pengguna. Flatpak sebelumnya bernama xdg-app dan dirancang untuk menyediakan cara yang konsisten dan aman untuk mengelola paket perangkat lunak GUI di Linux.
+
+Saat menginstall aplikasi flatpak, terutama di linux distro selain Fedora, biasanya akan muncul pemberitahuan seperti berikut:
+```
+Note that the directories 
+
+'/var/lib/flatpak/exports/share'
+'/home/falter/.local/share/flatpak/exports/share'
+
+are not in the search path set by the XDG_DATA_DIRS environment variable, so
+applications installed by Flatpak may not appear on your desktop until the
+session is restarted.
+```
+Ini memberitahukan bahwa ikon aplikasi yang diinstall melalui flatpak tidak akan muncul di menu aplikasi sampai //logout// atau //reboot//. Hal ini karena di distro selain Fedora, direktori tempat flatpak menginstall `.desktop` file tidak diatur di //environment variable// XDG_DATA_DIRS.
