@@ -25,3 +25,8 @@ echo \
 sudo apt-get update -qq
 sudo apt-get -qq -y install podman
 ```
+
+= docker-compose: permission denied
+```
+echo 'export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock' >> .bashrc
+source .bashrc
