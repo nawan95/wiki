@@ -13,7 +13,9 @@ table {
 = Fitur
 Beberapa fitur utama LimeSurvey:
 * Mendukung untuk mengenkripsi jawaban
-* Dukungan untuk membuat formulir atau survey 
+* Dukungan untuk membuat formulir atau survey multibahasa
+* Berbagai pilihan pertanyaan
+* Fitur formulir atau survey offline dengan teknologi //Optical Mark Recognition// (OMR)
 
 = Peladen LimeSurvey
 Berikut adalah beberapa peladen LimeSurvey:
