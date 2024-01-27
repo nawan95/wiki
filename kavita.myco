@@ -1,4 +1,4 @@
-Kavita adalah peladen buku dan komik elektronik sumber terbuka yang memungkinkan pengguna untuk membaca koleksi buku dan/atau komik dimana saja dan kapanpun. Kavita mirip dengan [[Calibre]] yang juga sama-sama sumber terbuka.
+Kavita adalah peladen buku dan komik elektronik sumber terbuka yang memungkinkan pengguna untuk membaca koleksi buku dan/atau komik dimana saja dan kapanpun. Kavita mirip dengan [[Calibre-web | Calibre]] yang juga sama-sama sumber terbuka.
 
 = Pemasangan
 Di sini saya akan menggunakan podman dan docker-compose untuk menginstall Kavita. Tujuannya semata agar lebih mudah saat ingin mengupdate Kavita. Pastikan terlebih dahulu bahwa podman dan docker-compose sudah terinstall di sistem operasi.
