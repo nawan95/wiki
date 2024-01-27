@@ -24,16 +24,21 @@ Berikut adalah beberapa peladen LimeSurvey:
 Peladen yang pertama dapat digunakan oleh publik sedangkan limesurvey.nawan.my.id dikelola oleh saya tetapi registrasi akun tidak dibuka untuk publik. Silakan hubungi saya jika tertarik menggunakan peladen LimeSurvey saya.
 
 = Pembaharuan
+Pembaharuan LimeSurvey harus dilakukan secara manual kecuali memiliki lisensi [[https://manual.limesurvey.org/ComfortUpdate | ComfortUpdate]].
 
 ```
 wget https://download.limesurvey.org/latest-master/limesurvey{version}.zip
-unzip https://download.limesurvey.org/latest-master/limesurvey{version}.zip\
+unzip https://download.limesurvey.org/latest-master/limesurvey{version}.zip
 ```
-
+Salin file yang sudah diekstrak ke direktori web limesurvey. Di sini kita menggunakan `rsync`.
 ```
 rsync -av --exclude='/application/config/security.php' --exclude='/application/config/config.php' --exclude='/upload' --exclude='.htaccess' /home/user/limesurvey /var/www/limesurvey.nawan.my.id
 ```
-
+Setelah menyalin file, cek apakah pemilik direktori dan file sudah sesuai.  Ubah pemilik direktori dan file ke pengguna saat ini dan grup web server (umumnya `www-data`) jika belum.
+```
+sudo chown -R user:www-data limesurvey/
+```
+Pastikan juga izin direktori dan file sudah sesuai.
 ```
 sudo chmod -R o-r-w-x limesurvey/
 sudo chmod -R 770 application/config/config.php
@@ -41,3 +46,4 @@ sudo chmod -R 770 application/config/security.php
 sudo chmod -R 770 temp
 sudo chmod -R 770 upload
 ```
+
