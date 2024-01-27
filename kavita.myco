@@ -1,0 +1,35 @@
+Kavita adalah peladen buku dan komik elektronik sumber terbuka yang memungkinkan pengguna untuk membaca koleksi buku dan/atau komik dimana saja dan kapanpun. Kavita mirip dengan [[Calibre]] yang juga sama-sama sumber terbuka.
+
+= Pemasangan
+Di sini saya akan menggunakan podman dan docker-compose untuk menginstall Kavita. Tujuannya semata agar lebih mudah saat ingin mengupdate Kavita. Pastikan terlebih dahulu bahwa podman dan docker-compose sudah terinstall di sistem operasi.
+```
+# Ubuntu 20.10 and newer
+sudo apt-get update
+sudo apt-get -y install podman docker-compose
+```
+
+Panduan menginstall podman yang lebih lengkap dapat dilihat [[https://podman.io/docs/installation#linux-distributions | di situs resmi Podman]]. Setelah Podman dan compose terpasang, buat file dengan nama `docker-compose.yml`.
+```
+services:
+  kavita:
+    image: lscr.io/linuxserver/kavita:latest
+    container_name: kavita
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /home/kavita/Kavita/config:/config
+      - /home/kavita/perpus:/data
+    ports:
+      - 5000:5000
+    restart: unless-stopped
+```
+
+Silakan ubah direktori volume sesuai data file //ebook// atau komik kamu. Setelah semua siap, jalankan perintah `docker-compose -d`.
+
+= Pembaharuan
+Untuk memperbaharui Kavita yang terpasang menggunakan Podman.
+```
+docker-compose pull
+```
