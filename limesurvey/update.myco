@@ -1,0 +1,31 @@
+Berikut adalah skrip untuk memperbaharui LimeSurvey. Skrip ini belum diuji dan mungkin mengakibatkan hal yang tidak terduga. Mohon backup semua data sebelum menguji script di bawah.
+
+```
+#!/bin/bash
+
+# Set the path to your LimeSurvey installation directory
+limesurvey_path="/path/to/limesurvey"
+
+# Download the latest version of LimeSurvey
+wget -qO "$limesurvey_path/limesurvey.zip" https://download.limesurvey.org/latest-stable-release/limesurvey3.0.0-build210118.zip
+
+# Unzip the downloaded file
+unzip -q "$limesurvey_path/limesurvey.zip" -d "$limesurvey_path"
+
+# Remove the downloaded zip file
+rm "$limesurvey_path/limesurvey.zip"
+
+# Backup your files and database
+# Delete all the old files/folders except for:
+# /application/config/security.php - Important!! This is the key to all encrypted data in LimeSurvey (version 4 and later)
+# /application/config/config.php;
+# /upload directory
+# Note: If you have any customized templates in /upload/templates, make sure you 'refresh' those with any changes that come with the new LimeSurvey version.
+# The easiest way to check for such changes is to file-compare your old template with the new version of the default template. If you see any differences other than your customizations, a refresh is needed.
+
+# Copy the new files from the new LimeSurvey package to the existing location
+cp -r "$limesurvey_path/limesurvey/"* "$limesurvey_path"
+
+# Open the admin page in your browser (e.g. http://localhost/limesurvey/admin) and check if a database scheme upgrade is necessary
+# After the upgrade, clear your browser cache and cookies
+```
