@@ -32,7 +32,7 @@ unzip https://download.limesurvey.org/latest-master/limesurvey{version}.zip
 ```
 Salin file yang sudah diekstrak ke direktori web limesurvey. Di sini kita menggunakan `rsync`.
 ```
-rsync -av --exclude='/application/config/security.php' --exclude='/application/config/config.php' --exclude='/upload' --exclude='.htaccess' /home/user/limesurvey /var/www/limesurvey.nawan.my.id
+sudo rsync -av --exclude='/application/config/security.php' --exclude='/application/config/config.php' --exclude='/upload' --exclude='.htaccess' /home/user/limesurvey /var/www/limesurvey.nawan.my.id
 ```
 Setelah menyalin file, cek apakah pemilik direktori dan file sudah sesuai.  Ubah pemilik direktori dan file ke pengguna saat ini dan grup web server (umumnya `www-data`) jika belum.
 ```
