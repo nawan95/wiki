@@ -23,3 +23,21 @@ Berikut adalah beberapa peladen LimeSurvey:
 * [[https://limesurvey.nawan.my.id | limesurvey.nawan.my.id]]
 Peladen yang pertama dapat digunakan oleh publik sedangkan limesurvey.nawan.my.id dikelola oleh saya tetapi registrasi akun tidak dibuka untuk publik. Silakan hubungi saya jika tertarik menggunakan peladen LimeSurvey saya.
 
+= Pembaharuan
+
+```
+wget https://download.limesurvey.org/latest-master/limesurvey{version}.zip
+unzip https://download.limesurvey.org/latest-master/limesurvey{version}.zip\
+```
+
+```
+rsync -av --exclude='/application/config/security.php' --exclude='/application/config/config.php' --exclude='/upload' --exclude='.htaccess' /home/user/limesurvey /var/www/limesurvey.nawan.my.id
+```
+
+```
+sudo chmod -R o-r-w-x limesurvey/
+sudo chmod -R 770 application/config/config.php
+sudo chmod -R 770 application/config/security.php
+sudo chmod -R 770 temp
+sudo chmod -R 770 upload
+```
