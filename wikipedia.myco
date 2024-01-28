@@ -7,8 +7,8 @@ Pereferensi => Perkakas => Antarmuka => Centang pilihan "Beralih ke mode gelap".
 
 = Sunting cepat judul bagian
 Skrip pengguna berikut berfungsi untuk menyunting judul bagian dengan cepat. Tambahkan kode di atas ke halaman [[idwiki>Istimewa:Halaman Saya/common.js]], kemudian simpan dan jangan lupa hapus //cache// situs dengan tekan `Shift + F5`.
+
 ```
 importScript('User:Hidayatsrf/hdedit.js');//[[User:Hidayatsrf/hdedi]]
 ```
-
 Setelah itu jika ingin menyunting judul bagian cukup dengan mengklik judul bagian tersebut dan dialog penyuntingan akan secara otomatis muncul.
