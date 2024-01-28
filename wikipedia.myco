@@ -4,6 +4,7 @@
 Secara bawaan, Wikipedia tidak memiliki mode gelap. Namun bagi pengguna yang sudah memiliki akun di Wikipedia dapat masuk (login) ke akun Wikipedia dan mengaktifkan fitur mode gelap.
 ```
 Pereferensi => Perkakas => Antarmuka => Centang pilihan "Beralih ke mode gelap".
+```
 
 = Sunting cepat judul bagian
 Skrip pengguna berikut berfungsi untuk menyunting judul bagian dengan cepat. Tambahkan kode di atas ke halaman [[idwiki>Istimewa:Halaman Saya/common.js]], kemudian simpan dan jangan lupa hapus //cache// situs dengan tekan `Shift + F5`.
