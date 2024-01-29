@@ -11,4 +11,4 @@ are not in the search path set by the XDG_DATA_DIRS environment variable, so
 applications installed by Flatpak may not appear on your desktop until the
 session is restarted.
 ```
-Ini memberitahukan bahwa ikon aplikasi yang diinstall melalui flatpak tidak akan muncul di menu aplikasi sampai //logout// atau //reboot//. Hal ini karena di distro selain Fedora, direktori tempat flatpak menginstall `.desktop` file tidak diatur di //environment variable// XDG_DATA_DIRS.
+Ini memberitahukan bahwa ikon aplikasi yang diinstall melalui flatpak tidak akan muncul di menu aplikasi sampai //logout// atau //reboot//. Hal ini karena di distro selain Fedora, direktori tempat flatpak menginstall `.desktop` file tidak diatur di //environment variable// `XDG_DATA_DIRS`.
