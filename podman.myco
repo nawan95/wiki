@@ -27,6 +27,7 @@ sudo apt-get -qq -y install podman
 ```
 
 = docker-compose: permission denied
+Kesalahan ini disebabkan oleh `docker-compose` tidak bisa mengakses //socket Podman//.
 ```
 echo 'export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock' >> .bashrc
 source .bashrc
