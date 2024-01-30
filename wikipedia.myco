@@ -16,6 +16,7 @@ importScript('User:Hidayatsrf/hdedit.js');//[[User:Hidayatsrf/hdedit]]
 Setelah itu jika ingin menyunting judul bagian cukup dengan mengklik judul bagian tersebut dan dialog penyuntingan akan secara otomatis muncul.
 
 = Menyunting dari VSCode
+<= ./VSCode | overview
 [[enwiki>VSCode | VSCode]] bisa digunakan untuk menyunting Wikipedia dan semua wiki yang menggunakan perangkat lunak [[enwiki>MediaWiki | MediaWiki]]. 
 *. Pertama pasang ekstensi Wikitext di VSCode;
 *. Setelah terpasang, buka menu pengaturan VSCode dan cari pengaturan ekstensi Wikitext dengan mengetikkan kata kunci `Wikitext` di bilah pencarian;
