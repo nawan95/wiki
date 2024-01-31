@@ -1,10 +1,17 @@
 **Wikipedia** adalah situs ensiklopedia daring gratis yang menggunakan perangkat lunak wiki (MediaWiki) untuk memungkinkan semua orang untuk berkontribusi.
 
 = Mode gelap
+== Pengguna terdaftar
 Secara bawaan, Wikipedia tidak memiliki mode gelap. Namun bagi pengguna yang sudah memiliki akun di Wikipedia dapat masuk (login) ke akun Wikipedia dan mengaktifkan fitur mode gelap.
 ```
 Pereferensi => Perkakas => Antarmuka => Centang pilihan "Beralih ke mode gelap".
 ```
+== Pengguna anonim
+Bagi pengguna anonim, dapat menggunakan ekstensi web browser untuk mengubah halaman web Wikipedia menjadi mode gelap.
+* [[https://addons.mozilla.org/id/firefox/addon/dark-mode-for-wikipedia/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search | Dark Mode for Wikipedia (Firefox)
+* [[https://chromewebstore.google.com/detail/modern-for-wikipedia/emdkdnnopdnajipoapepbeeiemahbjcn | Modern for Wikipedia (Chrome)
+
+Alternatif lain bagi pengguna anonim yang ingin menikmati mode gelap dapat menggunakan [[https://www.wikiwand.com/ | Wikiwand]].
 
 = Sunting cepat judul bagian
 Skrip pengguna berikut berfungsi untuk menyunting judul bagian dengan cepat. Tambahkan kode di atas ke halaman [[idwiki>Istimewa:Halaman Saya/common.js]], kemudian simpan dan jangan lupa hapus //cache// situs dengan tekan `Shift + F5`.
