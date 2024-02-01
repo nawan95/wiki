@@ -49,7 +49,7 @@ RemoteIPTrustedProxy 192.0.2.22 2c0f:f248::/32
 Di direktori `/etc/caddy/Caddyfile.d/` buat `10-trusted_proxy.caddyfile`. Masukkan semua alamat IP Cloudflare ke `trusted_proxies``.
 ```
 {
-        servers {
+	servers {
 		# all traffic come from cloudflare cdn
 		trusted_proxies cloudlfare [cloudflare-ip-address]
 	}
