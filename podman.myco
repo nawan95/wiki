@@ -32,3 +32,13 @@ Kesalahan ini disebabkan oleh `docker-compose` tidak bisa mengakses //socket Pod
 echo 'export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock' >> .bashrc
 source .bashrc
 ```
+= Kontainer tidak dapat terhubung ke host
+```
+mkdir -p ~/.config/containers
+nano containers.conf
+```
+Kemudian masukkan:
+```
+[containers]
+rootless_networking = "cni"
+```
