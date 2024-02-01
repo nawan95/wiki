@@ -1,0 +1,11 @@
+Dari [[enwiki>Btrfs]]:
+> Sebuah format penyimpanan komputer yang menggabungkan sistem berkas yang didasarkan pada prinsip salin-tulis (COW) dengan manajer volume logis (jangan disamakan dengan LVM Linux), yang dikembangkan bersama. Didirikan oleh Chris Mason pada tahun 2007 untuk digunakan di Linux, dan sejak November 2013, format on-disk sistem file ini telah dinyatakan stabil di kernel Linux.
+
+= Btrfs dan Inode
+Dari [[https://www.thegeekdiary.com/command-df-i-shows-inode0-on-btrfs-file-system/ | The Geek Diary]]:
+> BTRFS does not use inodes in quite the same way as other filesystems, and it has no pre-determined limits, so it has nothing to count. The inode counts for BTRFS will always show zero due to the fact that BTRFS does not use inodes.
+
+Dari [[https://mpdesouza.com/blog/btrfs-for-mere-mortals-inode-allocation/ | Marco's Blog]]:
+> Filesystems like ext4 allocate the entire disk on filesystem creation time, creating block groups all over the available space. This means that once the spaces for data and metadata are defined, they cannot be changed after the filesystem is in use, as there isn’t a way to extend them: they have fixed offsets. Let’s take a look how it works for ext4.
+
+> Btrfs allocates its structures dynamically. From block groups to internal structures and inodes, btrfs allocates them on demand.
