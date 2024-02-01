@@ -1,12 +1,12 @@
 Mengingat Cloudflare bertindak sebagai reverse proxy dari situs, maka peladen web //server// asal secara default akan me-//log// alamat IP cloudflare bukan alamat asli pengunjung situs. 
 
-
-= Enable mod_remoteip by issuing the following command:
+= Apache
+== Enable mod_remoteip by issuing the following command:
 ```
 sudo a2enmod remoteip
 ```
-= Tambahkan RemoteIPHeader CF-Connecting-IP
 
+== Tambahkan RemoteIPHeader CF-Connecting-IP
 ```
 ...
 RemoteIPHeader CF-Connecting-IP
@@ -15,7 +15,8 @@ ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
 ...
 ```
-= Tambahkan //trusted proxy//
+
+== Tambahkan //trusted proxy//
 Setelah itu tambahkan alamat IP Cloudflare ke daftar proksi tepercaya (//trusted proxy//) di `/etc/apache2/conf-available/remoteip.conf`.
 
 ```
@@ -44,5 +45,25 @@ RemoteIPTrustedProxy 192.0.2.21 2a06:98c0::/29
 RemoteIPTrustedProxy 192.0.2.22 2c0f:f248::/32
 ```
 
+= Caddy
+Di direktori `/etc/caddy/Caddyfile.d/` buat `10-trusted_proxy.caddyfile`. Masukkan semua alamat IP Cloudflare ke `trusted_proxies``.
+```
+{
+        servers {
+		# all traffic come from cloudflare cdn
+		trusted_proxies cloudlfare [cloudflare-ip-address]
+	}
+}
+```
+
+Kemudian  tambahkan `X-Forwarded-For` dan `CF-Connecting IP` ke konfigurasi situs.
+```
+yoursite.com {
+	# forward request to golang backend
+	reverse_proxy [::]:8080
+	encode gzip
+	client_ip_headers X-Forwarded-For Cf-Connecting-IP
+}
+```
 = Referensi
 [[https://developers.cloudflare.com/support/troubleshooting/restoring-visitor-ips/restoring-original-visitor-ips/ | Restoring original visitor IPs]] di Cloudflare Docs.
