@@ -42,3 +42,7 @@ Kemudian masukkan:
 [containers]
 rootless_networking = "cni"
 ```
+
+= Kenapa tidak bisa menggunakan sudo dengan Podman //rootless//?
+> All of this still doesn't explain why you cannot use sudo and su with rootless containers. The answer is that sudo and su do not create a login session. There are many historical reasons for this, most stemming from the fact that sudo and su are somewhat irregular (one user becoming another user, instead of a fresh login). See this GitHub issue for details. Given this, rootless Podman cannot be used with sudo and su unless loginctl enable-linger is used to force a persistent user session to be created for the user.
+-- [[https://www.redhat.com/sysadmin/sudo-rootless-podman | Why can't I use sudo with rootless Podman?]]
