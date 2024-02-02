@@ -23,11 +23,11 @@ spec:
     - name: MARIADB_DATABASE
       value: freshrss
     - name: MARIADB_ROOT_PASSWORD
-      value: CeHZtTFKElPMA97XZbjZC6snAGUrvCaX
+      value: 
     - name: MARIADB_USER
       value: freshrss_user
     - name: MARIADB_PASSWORD
-      value: kAhEixwZQY2533kagtOhENDS7Xp2W9YN
+      value: 
     image: docker.io/library/mariadb:latest
     name: freshrss-db
     ports:
