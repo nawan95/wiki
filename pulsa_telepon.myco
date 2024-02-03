@@ -3,6 +3,8 @@ Berikut adalah beberapa kendala yang sering terjadi saat membeli pulsa telepon:
 = Transaksi sukses, pulsa belum masuk
 Jika membeli pulsa melalui channel elektronik seperti //mobile banking// atau dompet elektronik dan transaksi sukses tetapi pulsa tetap belum masuk, silakan cari kode //serial number// (SN) yang biasanya ada di struk/bukti transaksi.
 
+Buka aplikasi telepon dan masukkan kode //serial number// sesuai format berikut:
+
 * Indosat : *556*(serial number)# tekan OK/Yes
 * Telkomsel : *133*(serial number)# tekan OK/Yes
 * Tri : *111*(serial number)# tekan OK/Yes
