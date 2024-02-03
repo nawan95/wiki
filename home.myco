@@ -1,2 +1,19 @@
 = Selamat datang 👋
-Ini adalah situs wiki pribadi [[u/nawan]]. Gunakan menu di atas untuk bernavigasi di wiki ini. Sebagai alternatif, kamu juga dapat menggunakan menu navigasi kiri dan kanan di bawah. Untuk saat ini,  fitur pencarian di wiki ini masih terbatas pada judul [[hypha]].
+Ini adalah wiki [[u/nawan]]. Wiki ini adalah basis pengetahuan pribadi saya untuk segala hal termasuk tetapi tidak terbatas pada Linux, teknologi, bahasa, dan Wikipedia (karena saya juga kontributor di [[idwiki>Pengguna:NawanP | Wikipedia bahasa Indonesia]].
+
+== Navigasi
+Gunakan menu di atas untuk bernavigasi di wiki ini. Kamu juga dapat menggunakan menu navigasi kiri dan kanan di bawah. Sebagai alternatif, kamu juga dapat menggunakan fitur kotak pencarian yang terletak di paling atas,  tetapi fitur pencarian di wiki ini masih terbatas pada judul [[hypha]].
+
+=> /list
+=> /random
+=> /category
+
+== Kategori
+Berikut ini adalah beberapa kategori pilihan. Untuk melihat daftar lengkapnya silakan ke halaman [[/category | kategori]].
+=> /category/istilah
+=> /category/linux
+=> /category/tech support
+=> /category/self-hosting
+
+== Penyangkalan
+Wiki ini dan semua isinya pertama-tama dan terutama ditujukan untuk penggunaan pribadi saya. Semua panduan (tutorial), skrip, dan kode yang ada di wiki ini disediakan sebagaimana adanya dan tanpa jaminan apapun. Mohon untuk tidak dengan buta mengikuti semua yang ada di wiki ini dan selalu cadangkan data-data penting.
