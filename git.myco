@@ -1,0 +1,4 @@
+= Git push: Permission denied (publickey)
+```
+ssh-add ~/.ssh/id_rsa
+```
