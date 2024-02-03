@@ -29,3 +29,9 @@ Skrip ini menginstal kunci SSH pada server sebagai kunci resmi. Tujuannya adalah
 ```
 ssh-copy-id -i ~/.ssh/mykey user@host
 ```
+
+= SSH Tunnel
+Secure Shell (SSH) Tunnel terdiri dari sebuah "terowongan" terenkripsi yang dibuat melalui koneksi protokol SSH. Pengguna dapat mengatur terowongan SSH untuk mentransfer lalu lintas yang tidak dienkripsi melalui jaringan melalui saluran terenkripsi.
+```
+ssh -N -L 8080:127.0.0.1:destinationport username@hostname
+```
