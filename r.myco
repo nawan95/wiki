@@ -1,0 +1,11 @@
+Dari "[[https://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f | What is R?]]" di bagian FAQ:
+
+R adalah sebuah sistem untuk komputasi statistik dan grafik. Sistem ini terdiri dari sebuah bahasa plus lingkungan run-time dengan grafik, debugger, akses ke fungsi sistem tertentu, dan kemampuan untuk menjalankan program yang disimpan dalam file skrip.
+
+= RStudio
+== Menginstall RStudio
+Gunakan perintah berikut untuk menginstall RStudio di Fedora Linux Workstation:
+```
+sudo dnf install rstudio
+```
+Perintah tersebut juga akan secara otomatis menginstall semua dependensi yang dibutuhkan oleh RStudio termasuk R itu sendiri.
