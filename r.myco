@@ -9,3 +9,17 @@ Gunakan perintah berikut untuk menginstall RStudio di Fedora Linux Workstation:
 sudo dnf install rstudio-desktop
 ```
 Perintah tersebut juga akan secara otomatis menginstall semua dependensi yang dibutuhkan oleh RStudio termasuk paket `R-core`.
+
+= Tips dan Trik
+== Membuat R lebih cepat: openblas
+Pustaka numerik yang disertakan dengan paket r (`lapack` dan juga `blas`) tidak memiliki kemampuan //multithreading//. Mengganti paket `blas` referensi dengan paket `openblas` yang dioptimalkan dapat menghasilkan peningkatan kecepatan yang dramatis untuk banyak komputasi umum dalam R. Lihat utas ini untuk gambaran umum tentang potensi peningkatan kecepatan:
+
+* https://github.com/tmolteno/necpp/issues/18
+* http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/
+* https://freddie.witherden.org/pages/blas-gemm-bench/
+* http://nghiaho.com/?p=1726
+
+Paket `openblas` biasanya sudah terpasang di Fedora Linux Workstation, tetapi jika belum paket ini dapat dipasang dengan:
+```
+sudo dnf install openblas
+```
