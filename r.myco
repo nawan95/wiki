@@ -8,4 +8,4 @@ Gunakan perintah berikut untuk menginstall RStudio di Fedora Linux Workstation:
 ```
 sudo dnf install rstudio
 ```
-Perintah tersebut juga akan secara otomatis menginstall semua dependensi yang dibutuhkan oleh RStudio termasuk R itu sendiri.
+Perintah tersebut juga akan secara otomatis menginstall semua dependensi yang dibutuhkan oleh RStudio termasuk paket `R-core`.
