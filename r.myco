@@ -6,6 +6,6 @@ R adalah sebuah sistem untuk komputasi statistik dan grafik. Sistem ini terdiri 
 == Menginstall RStudio
 Gunakan perintah berikut untuk menginstall RStudio di Fedora Linux Workstation:
 ```
-sudo dnf install rstudio
+sudo dnf install rstudio-desktop
 ```
 Perintah tersebut juga akan secara otomatis menginstall semua dependensi yang dibutuhkan oleh RStudio termasuk paket `R-core`.
