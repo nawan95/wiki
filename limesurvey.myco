@@ -1,11 +1,11 @@
 table {
-   | **Nama** | LimeSurvey
-   | **Pencipta** | LimeSurvey GmbH
-   | **Pengembang** | Carsten Schmitz & LimeSurvey Team
-   | **Repositori** | [[https://github.com/LimeSurvey/LimeSurvey]]
+   | **Nama**              | LimeSurvey
+   | **Pencipta**          | LimeSurvey GmbH
+   | **Pengembang**        | Carsten Schmitz & LimeSurvey Team
+   | **Repositori**        | [[https://github.com/LimeSurvey/LimeSurvey]]
    | **Bahasa pemograman** | PHP
-   | **Lisensi** | GNU GPL
-   | **Situs web** | [[https://limesurvey.org]]
+   | **Lisensi**           | GNU GPL
+   | **Situs web**         | [[https://limesurvey.org]]
 }
 
 **LimeSurvey** adalah perangkat lunak sumber terbuka untuk membuat formulir atau survei, dari yang sederhana hingga formulir atau survei yang kompleks. LimeSurvey dapat menjadi alternatif dari Google Form dan sejenisnya.
