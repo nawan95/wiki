@@ -1,5 +1,5 @@
 = Mode gelap di Linux
-Microsoft Edge di Linux secara default tidak mengikuti pengaturan mode gelap di sistem operasi. Untuk mengatasinya kita bisa menambahkan `--force-dark-mode`` ke file `.desktop` Microsoft Edge.
+Microsoft Edge di Linux secara default tidak mengikuti pengaturan mode gelap di sistem operasi. Untuk mengatasinya kita bisa menambahkan `--force-dark-mode` ke file `.desktop` Microsoft Edge.
 
 == Flatpak
 ```
