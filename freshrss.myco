@@ -1,6 +1,7 @@
 **FreshRSS** adalah agregator umpan web sumber terbuka.
 
-= Kubernets YAML
+= Pemasangan
+== Kubernets YAML
 ```
 # Save the output of this file and use kubectl create -f to import
 # it into Kubernetes.
