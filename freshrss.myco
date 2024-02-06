@@ -22,7 +22,7 @@ WantedBy=default.target
 ```
 [Container]
 ContainerName=freshrss-db
-Environment=MARIADB_USER=freshrss_user MARIADB_PASSWORD=kAhEixwZQY2533kagtOhENDS7Xp2W9YN MARIADB_DATABASE=freshrss MARIADB_ROOT_PASSWORD=CeHZtTFKElPMA97XZbjZC6snAGUrvCaX
+Environment=MARIADB_USER=freshrss_user MARIADB_PASSWORD= MARIADB_DATABASE=freshrss MARIADB_ROOT_PASSWORD=
 Image=mariadb:latest
 PodmanArgs=--pod new:freshrss
 PublishPort=8000:80
@@ -32,7 +32,7 @@ Volume=/home/freshrss/db:/var/lib/mysql:Z
 [Install]
 WantedBy=default.target
 ```
-Mengingat systemd pengguna (bukan sistem) akan berhenti ketika pengguna tersebut logout, maka jalankan perintah berikut:
+Jangan lupa untuk mengganti mengisi environment variable di `freshrss-db.container`. Mengingat systemd pengguna (bukan sistem) akan berhenti ketika pengguna tersebut logout, maka jalankan perintah berikut:
 ```
 loginctl enable-linger username
 ```
