@@ -1,0 +1,5 @@
+File dengan ekstensi **rpmnew** dan **rpmsave** adalah hasil dari pemutakhiran paket RPM di [[Fedora Linux | Fedora]]. Ketika pemutakhiran menyertakan perubahan pada file konfigurasi default, alih-alih menimpa file konfigurasi pada sistem - dan mungkin menghapus perubahan yang telah dibuat oleh pengguna - paket akan menulis salah satu jenis file ini.
+
+* Jika file konfigurasi sama antara RPM lama dan RPM baru, file yang terinstal akan dibiarkan apa adanya
+* Jika ada perubahan antara RPM lama dan baru, dan file ditandai 'noreplace' (biasanya benar) maka file lokal dibiarkan apa adanya dan menulis file konfigurasi baru ke `.rpmnew`
+* Jika ada perubahan antara RPM lama dan baru, dan berkas tidak ditandai 'noreplace' maka ia memindahkan berkas lokal ke `.rpmsave dan` menggantinya dengan berkas dari RPM baru
