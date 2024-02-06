@@ -1,6 +1,43 @@
 **FreshRSS** adalah agregator umpan web sumber terbuka.
 
 = Pemasangan
+== Podman Quadlet
+Buat direktori untuk menempatkan file quadlet: `mkdir -p ~/.config/containers/systemd/`. Kemudian buat file `freshrss-app.container` dan `freshrss-db.container` di dalam direktori tersebut:
+
+`~/.config/containers/systemd/freshrss-app.continer`
+```
+[Container]
+ContainerName=freshrss-app
+Environment=TZ=Etc/UTC
+Image=lscr.io/linuxserver/freshrss:latest
+PodmanArgs=--pod freshrss
+SeccompProfile=unconfined
+Volume=/home/freshrss/app:/config:Z
+
+[Install]
+WantedBy=default.target
+```
+
+`~/.config/containers/systemd/freshrss-db.container`
+```
+[Container]
+ContainerName=freshrss-db
+Environment=MARIADB_USER=freshrss_user MARIADB_PASSWORD=kAhEixwZQY2533kagtOhENDS7Xp2W9YN MARIADB_DATABASE=freshrss MARIADB_ROOT_PASSWORD=CeHZtTFKElPMA97XZbjZC6snAGUrvCaX
+Image=mariadb:latest
+PodmanArgs=--pod new:freshrss
+PublishPort=8000:80
+SeccompProfile=unconfined
+Volume=/home/freshrss/db:/var/lib/mysql:Z
+
+[Install]
+WantedBy=default.target
+```
+Mengingat systemd pengguna (bukan sistem) akan berhenti ketika pengguna tersebut logout, maka jalankan perintah berikut:
+```
+loginctl enable-linger username
+```
+Ganti `username` menjadi username pengguna yang menjalankan kontainer freshhrss.
+
 == Kubernets YAML
 ```
 # Save the output of this file and use kubectl create -f to import
