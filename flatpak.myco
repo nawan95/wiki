@@ -1,4 +1,4 @@
-Flatpak adalah perangkat lunak Linux yang memungkinkan pengguna untuk menginstal dan menjalankan perangkat lunak dalam lingkungan sandbox. Ini berarti perangkat lunak diisolasi dari sistem dan hanya dapat mengakses sumber daya yang diizinkan oleh pengguna. Flatpak sebelumnya bernama xdg-app dan dirancang untuk menyediakan cara yang konsisten dan aman untuk mengelola paket perangkat lunak GUI di Linux.
+**Flatpak** adalah perangkat lunak Linux yang memungkinkan pengguna untuk menginstal dan menjalankan perangkat lunak dalam lingkungan sandbox. Ini berarti perangkat lunak diisolasi dari sistem dan hanya dapat mengakses sumber daya yang diizinkan oleh pengguna. Flatpak sebelumnya bernama xdg-app dan dirancang untuk menyediakan cara yang konsisten dan aman untuk mengelola paket perangkat lunak GUI di Linux.
 
 Saat menginstall aplikasi flatpak, terutama di linux distro selain Fedora, biasanya akan muncul pemberitahuan seperti berikut:
 ```
