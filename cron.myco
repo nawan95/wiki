@@ -1,0 +1,38 @@
+**Cron** adalah sistem penjadwalan tugas di sistem operasi [[idwiki>Mirip Unix | Unix-like]].
+
+= Pemasangan
+Di sistem operasi Fedora Linux, cron memiliki nama paket `cronie` dan bisa dipasang menggunakan dnf:
+
+```
+dnf install cronie
+```
+
+= Membuat tugas cron
+Setelah cron terpasang, perintah `crontab` bisa digunakan untuk membuat tugas cron. Jangan pernah mengedit `/etc/crontab` secara langsung karena file konfigurasi tersebut hanya untuk `root`.
+
+== Sebagai diri sendiri
+Perintah `crontab` berikut dapat digunakan untuk membuat atau menyunting tugas cron milik sendiri.
+
+```
+crontab -e
+```
+
+== Sebagai pengguna lain
+Untuk membuat atau menyunting tugas cron sebagai pengguna lain, kamu harus memiliki hak `sudo`.
+
+```
+sudo crontab -eu username
+```
+
+= Format tugas cron
+Tugas cron yang disimpan di `/etc/crontab` untuk root dan `/var/spool/cron` untuk pengguna non-root memiliki format sebagai berikut:
+
+```
+# .---------------- minute (0 - 59)
+# | .------------- hour (0 - 23)
+# | | .---------- day of month (1 - 31)
+# | | | .------- month (1 - 12) OR jan,feb,mar,apr ...
+# | | | | .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# | | | | |
+# * * * * * command to be executed
+```
