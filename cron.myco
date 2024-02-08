@@ -36,3 +36,22 @@ Tugas cron yang disimpan di `/etc/crontab` untuk root dan `/var/spool/cron` untu
 # | | | | |
 # * * * * * command to be executed
 ```
+
+= Mengaktifkan daemon
+Agar tugas cron dapat berjalan, daemon cron harus berjalan di latar belakang sebagai layanan sistem (//system service//). Di fedora, daemon cron bisa dijalankan dengan perintah:
+
+```
+sudo systemctl start crond
+```
+
+Gunakan perintah berikut untuk mengecek status daemon cron:
+
+```
+sudo systemctl status crond
+```
+
+Sedangkan perintah berikut dapat untuk mengaktifkan daemon cron agar dapat tetap berjalan setelah sistem oeprasi dimulai ulang:
+
+```
+sudo systemctl enable crond
+```
