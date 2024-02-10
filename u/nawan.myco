@@ -1,5 +1,20 @@
 Seorang mahasiswa humaniora dan kontributor di Wikipedia.
 
 * [[https://nawan.my.id/blog/ | Blog saya]]
+* saya[at]nawan[dot]my[dot]id (email)
+* [[xmpp:nawanp@disroot.org | nawanp@disroot.org]] (XMPP)
 
-Saya dapat dihubungi melalui email di saya[at]nawan[dot]my[dot]id.
+= Kunci OMEMO (XMPP)
+Jika kamu mengirimkan saya pesan melalui alamat XMPP di atas, pastikan bahwa kunci enkripsi OMEMO yang ditampilkan sesuai seperti salah satu di bawah ini:
+
+== Gajim (Linux)
+```
+2F37D614 1B526014 F8341BC5 D7416984 093A52BA 0757C287 1F2510CD C64A8338
+```
+
+== Dino (Linux)
+```
+EF917E99 CA0B0836 31AB8F2C 0323325F B963AF39 DC6CB706 14C095B0 F7E0AC17
+```
+
+Semua perubahan kunci enkripsi XMPP saya akan ditambahkan ke halaman ini.
