@@ -13,3 +13,12 @@ Sebagai alternatif, //hard refresh// juga dapat dilakukan dengan menekan dan men
 
 == Firefox (Android)
 Untuk peramban Firefox di Android, //hard refresh// bisa dilakukan dengan menekan tahan ikon muat ulang laman (refresh) selama 2-3 detik. Lihat salah satu jawaban di Stack Overflow berikut:[[https://stackoverflow.com/a/70871126]].
+
+= Tombol Visibilitas Kata Sandi (password visibility toggle)
+Seringkai dijumpai halaman login/signup situs web tidak memiliki tombol untuk menampilkan atau menyembunyikan kata sandi (yang biasanya memiliki ikon mata) di kolom kata sandi. Salah satu contohnya adalah situs [[https://ibank.bni.co.id | BNI Internet Banking]].
+
+Jika situs tidak mengimplementasikan fitur ini, kita bisa mengaktifkan fitur ini di sisi peramban atau klien:
+
+*. Buka `about:config`
+*. Kemudian cari: `layout.forms.reveal-password-button.enabled`
+*. Setelah ketemu ubah valuenya menjadi `true`
