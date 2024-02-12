@@ -1,0 +1,10 @@
+Mengeklik tautan pertama dalam teks utama artikel Wikipedia bahasa Inggris, dan kemudian mengulangi proses tersebut untuk artikel-artikel berikutnya, biasanya mengarah ke artikel Filsafat. Pada bulan Februari 2016, hal ini terjadi pada 97% dari seluruh artikel di Wikipedia, meningkat dari 94,52% pada tahun 2011. Artikel-artikel yang tersisa mengarah ke artikel tanpa wikilink keluar, ke halaman yang tidak ada, atau terjebak dalam perulangan.
+
+Ada beberapa teori yang mencoba menjelaskan fenomena ini, yang paling umum adalah kecenderungan halaman Wikipedia untuk bergerak ke atas "rantai klasifikasi". Menurut teori ini, pedoman Wikipedia Manual of Style tentang cara menulis bagian utama artikel merekomendasikan agar artikel dimulai dengan mendefinisikan topik artikel. Konsekuensi dari gaya ini adalah bahwa kalimat pertama dari sebuah artikel hampir selalu berupa pernyataan definisi, jawaban langsung untuk pertanyaan "apa itu [topik]?"
+
+= Instruksi
+*. Klik tautan pertama yang tidak diberi tanda kurung dan tidak dicetak miring.
+**. Huruf miring akan menyebabkan //loop// yang tidak menjengkelkan seperti Organisasi Perdagangan Dunia yang mengarah ke WTO (disambiguasi) yang mengarah kembali ke artikel Organisasi Perdagangan Dunia.
+**. Tanda kurung akan mengarah ke tautan bahasa yang dengan cepat menghubungkan subjek, seperti jalur Txorierri yang menghubungkan ke bahasa Basque, bukan jalur kereta api Narrow-gauge.
+*. Mengabaikan tautan eksternal atau tautan merah (tautan ke halaman yang tidak ada)
+*. Berhenti saat mencapai "Filsafat", atau halaman tanpa tautan, atau saat terjadi perulangan (loop).
