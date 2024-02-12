@@ -6,11 +6,13 @@ Kamu adalah yang paling rentan terhadap //phishing// atau Pengelabuan sehingga p
 == Pengelabuan Kartu Kredit
 Tidak seperti [[kartu debit]], [[kartu kredit]] bisa digunakan untuk bebelanja tanpa batas, selama belum mencapai limit kartu kredit. Selain itu, kartu kredit umumnya bisa digunakan untuk bertransaksi secara daring baik di dalam maupun di luar negeri. Hal ini membuat kartu kredit menjadi target pengelabuan atau //phishing//.
 
-* **//Email// palsu dari bank kartu kredit**
+* { **//Email// palsu dari bank kartu kredit**
 Bank penyedia kartu kredit sering mengirim //email// kepada pengguna kartu kredit, biasanya berisi promo, pemberitahuan terkait transaksi kartu kredit, dan tagihan kartu kredit. Namun, **tidak** semua //email// yang mengaku sebagai bank penyedia kartu kredit benar-benar merupakan bank yang di maksud. **//Email// yang mengaku sebagai bank padahal bukan merupakan salah satu bentuk //phishing// atau pengelabuan**.
+}
 
-* **Situs bank atau visa/mastercard palsu**
+* { **Situs bank atau visa/mastercard palsu**
 Hati-hati saat menerima //link// dari //email//, WhatsApp, atau SMS, terutama yang mengaku seakan sebagai bank. Jangan memasukkan data pribadi kartu kredit seperti nomor kartu kredit, kode [[CVV/CVC]], dan kode [[OTP]] ke [[link]] yang mencurigakan atau mengklaim sebagai bank penerbit kartu dan Visa/Mastercard. Hati-hati dengan //link// yang berasal dari [[URL Shortening | penyingkat URL]] seperti **bit.ly** dan **s.id**.
+}
 
 == Pengelabuan OTP
 Hampir semua layanan saat ini menggunakan kode [[OTP]] dengan tujuan menambah lapisan keamanan. Kode OTP umumnya dikirim melalui SMS, //email// maupun WhatsApp. Jangan pernah memberikan kode OTP kepada orang lain dan jangan pernah memasukkan kode OTP ke situs mencurigakan.
@@ -18,11 +20,13 @@ Hampir semua layanan saat ini menggunakan kode [[OTP]] dengan tujuan menambah la
 == Pengelabuan melalui telepon
 Pengelabuan melalui telepon seperti modus [[mama minta pulsa]] yang terkenal adalah salah satu bentuk //phishing// atau pengelabuan. Orang yang menjadi korban //phishing// melalui telepon biasanya mengklaim sebagai korban hipnotis karena //phishing// umumnya melibatkan manipulasi psikologis.
 
-* **Telepon pemberitahuan bahwa mendapat hadiah**
+* { **Telepon pemberitahuan bahwa mendapat hadiah**
 Modus ini biasanya berupa penelepon yang mengaku dari bank atau operator seluler kemudian menyampaikan bahwa kita memenangkan undian berhadiah. Kemudian mereka berupaya meyakinkan korban untuk mentransfer sejumlah uang sebagai pajak hadiah agar hadiah yang dimaksud dapat segera diproses. Jika mendapatkan telepon seperti ini, segera konfirmasi melalui //call center// resmi untuk memastikan kebenarannya. Selain itu pastikan nomor pemanggil merupakan nomor //call center// resmi.
+}
 
-* **Telepon palsu dari bank**
-Ini adalah modus pengelabuan yang umumnya dilakukan dengan berpura-pura menjadi petugas //call center// bank. Pelaku kemudian menginformasikan bahwa akun bank telah diretas atau perihal pemeliharaan rekening bank untuk kemudian pelaku menjebak korban untuk memberikan kode OTP, nomor kartu debit/kredit, dan CVV/CVC. 
+* { **Telepon palsu dari bank**
+Ini adalah modus pengelabuan yang umumnya dilakukan dengan berpura-pura menjadi petugas //call center// bank. Pelaku kemudian menginformasikan bahwa akun bank telah diretas atau perihal pemeliharaan rekening bank untuk kemudian pelaku menjebak korban untuk memberikan kode OTP, nomor kartu debit/kredit, dan CVV/CVC.
+}
 
 == Pengelabuan melalui WhatsApp
 Pengelabuan atau //phishing// melalui WhatsApp ini biasanya menggunakan modus yang sama seperti SMS atau telepon yaitu dengan mengaku sebagai pihak yang punya legitimasi seperti bank, operator seluler, dan lainnya. Kemudian korban diminta untuk mengklik link dan memasukkan informasi pribadi seperti OTP. Selain itu, akhir-akhir ini juga muncul teknik //phishing// melalui WhatsApp yang jauh lebih canggih, yaitu dengan mengirimkan file yang sekilas tidak berbahaya seperti file PDF undangan pernikahan, tetapi jika diklik dan dibuka akan secara otomatis mengirimkan kode OTP yang diterima melalui SMS ke pelaku. Baca juga: [[Daftar kasus phishing]].
