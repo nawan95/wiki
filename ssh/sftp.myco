@@ -18,3 +18,10 @@ Perintah yang digunakan untuk bernavigasi atau berselancar di SFTP sama seperti 
 * Melihat direktori kerja: `pwd`
 
 Tidak seperti SSH, saat terkoneksi ke SFTP, secara teknis kita mengontrol dua terminal sekaligus. Untuk membedakan perintah yang akan dieksekusi di terminal remote dan terminal lokal ditambahkan huruf "L" kecil pada perintah. Misalnya untuk berpindah direktori di komputer lokal maka ketikkan perintah `lcd`.
+
+== Mentransfer file
+SFTP dapat mentransfer file dua arah.
+* Mentransfer file ke komputer remote: `sftp put lokasi/namafile`
+* Mentransfer file ke komputer lokal: `sftp get lokasi/namafile`
+
+Untuk mentransfer semua direktori secara rekursif, opsi `-r` dapat digunakan.
