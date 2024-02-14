@@ -1,0 +1,20 @@
+SFTP (**S**ecure **F**ile **T**ransfer **P**rogram) adalah program transfer file interaktif yang berjalan di atas protokol SSH. Ini mirip dengan FTP dan dianggap sebagai penerus dari FTP.
+
+= Pemasangan
+SFTP umumnya sudah dimasukkan kedalam paket [[SSH | OpenSSH]] sehingga SFTP dapat langsung digunakan setelah OpenSSH terpasang.
+
+= Pemakaian
+Cara memulai koneksi ke SFTP mirip seperti SSH dengan perintah diikuti //username// dan alamat peladen. Seperti SSH, pintasan //keyboard// `Ctrl + D` juga dapat digunakan untuk mengakhiri koneksi SFTP.
+
+```
+sftp username@hostname
+```
+
+== Perintah
+Perintah yang digunakan untuk bernavigasi atau berselancar di SFTP sama seperti di Linux/Unix.
+
+* Berpindah direktori: `cd`
+* Melihat daftar file di sebuah direktori: `ls`
+* Melihat direktori kerja: `pwd`
+
+Tidak seperti SSH, saat terkoneksi ke SFTP, secara teknis kita mengontrol dua terminal sekaligus. Untuk membedakan perintah yang akan dieksekusi di terminal remote dan terminal lokal ditambahkan huruf "L" kecil pada perintah. Misalnya untuk berpindah direktori di komputer lokal maka ketikkan perintah `lcd`.
