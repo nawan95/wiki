@@ -35,3 +35,12 @@ Secure Shell (SSH) Tunnel terdiri dari sebuah "terowongan" terenkripsi yang dibu
 ```
 ssh -N -L 8080:127.0.0.1:destinationport username@hostname
 ```
+
+= SFTP
+//Lebih lanjut: [[./SFTP]]//
+SFTP merupakan alat yang memungkinkan transfer file melalui protokol SSH. Ini merupakan ekstensi dari protokol SSH dan dianggap sebagai penerus dari [[FTP]]/[[FTP | FTPS]] karena beberapa kelebihan dari segi keamanan dibandingkan FTP dan FTPS.
+
+Beberapa kelebihan SFTP dibandingkan FTP/FTPS:
+* Hanya perlu membuka satu port (umumnya port 22).
+* Tidak membutuhkan kata sandi. SFTP dapat dikonfigurasi agar hanya menggunakan kunci SSH sebagai alih-alih autentikasi berbasis kata sandi.
+* Dukungan 2FA menggunakan TOTP
