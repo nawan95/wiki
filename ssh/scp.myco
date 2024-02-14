@@ -1,0 +1,8 @@
+SCP (**S**ecure **C**opy **P**rogram) adalah program transfer file interaktif, mirip seperti perintah `copy` yang berfungsi untuk menyalin file antar komputer menggunakan protokol SSH.
+
+= Protokol SCP Dipensiunkan
+[[https://www.openssh.com/txt/release-8.0 | Catatan rilis OpenSSH 8.0]] pada 2019 menyebut:
+> The scp protocol is outdated, inflexible and not readily fixed. We recommend the use of more modern protocols like sftp and rsync for file transfer instead.
+
+[[https://www.openssh.com/txt/release-8.8 | Catatan rilis OpenSSH 8.8]] pada 2021 menyebut:
+> A near-future release of OpenSSH will switch `scp(1)` from using the legacy scp/rcp protocol to using SFTP by default.
