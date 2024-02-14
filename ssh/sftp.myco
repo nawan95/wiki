@@ -1,4 +1,4 @@
-SFTP (**S**ecure **F**ile **T**ransfer **P**rogram) adalah program transfer file interaktif yang berjalan di atas protokol SSH. Ini mirip dengan FTP dan dianggap sebagai penerus dari FTP.
+**SFTP** (**S**ecure **F**ile **T**ransfer **P**rogram) adalah program transfer file interaktif yang berjalan di atas protokol SSH. Ini mirip dengan FTP dan dianggap sebagai penerus dari FTP.
 
 = Pemasangan
 SFTP umumnya sudah dimasukkan kedalam paket [[SSH | OpenSSH]] sehingga SFTP dapat langsung digunakan setelah OpenSSH terpasang.
