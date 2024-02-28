@@ -21,6 +21,6 @@ ln -s /opt/quarto-1.4.550-linux-rhel7-amd64/bin/quarto /usr/local/bin
 = Troubleshooting
 == Tidak dapat membuat `.qmd` di RStudio
 Paket RStudio di Fedora tidak mengaktifkan dukungan Quarto sehingga walaupun Quarto telah terpasang, RStudio tidak akan mendeteksi Quarto.
-==> https://stackoverflow.com/questions/77735889/quarto-in-fedora-missing-qmd-file-option-in-rstudiohttps://github.com/rstudio/rstudio/issues/12609#issuecomment-1405380270
+==> https://stackoverflow.com/questions/77735889/quarto-in-fedora-missing-qmd-file-option-in-rstudio
 ==> https://github.com/rstudio/rstudio/issues/13197#issuecomment-1582531729
 ==> https://github.com/rstudio/rstudio/issues/12609#issuecomment-1405380270
