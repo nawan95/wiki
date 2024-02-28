@@ -1,0 +1,19 @@
+**Quarto** adalah perangkat lunak sistem publikasi sumber terbuka.
+
+= Instalasi
+Sayangnya, Fedora tidak menyediakan paket Quarto di repositori resmi sedangkan di situs resmi Quarto mereka hanya menyediakan berkas arsip `tar.gz` bukan `.rpm` sehingga Quarto harus diinstall secara manual.
+
+== Download Quarto dari situs resmi
+```
+wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.550/quarto-1.4.550-linux-rhel7-amd64.tar.gz
+```
+
+== Ekstrak file
+```
+tar -C /opt -xvzf quarto-1.4.550-linux-rhel7-amd64.tar.gz
+```
+
+== Symlink binari Quarto ke $PATH
+```
+ln -s /opt/quarto-1.4.550-linux-rhel7-amd64/bin/quarto /usr/local/bin
+```
