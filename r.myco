@@ -23,3 +23,6 @@ Paket `openblas` biasanya sudah terpasang di Fedora Linux Workstation, tetapi ji
 ```
 sudo dnf install openblas
 ```
+
+= Quarto
+[[Quarto]] adalah perangkat lunak sistem publikasi ilmiah dan teknis. Kunjungi halaman Quarto untuk melihat cara menginstall.
