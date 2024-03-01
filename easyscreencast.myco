@@ -1,4 +1,4 @@
-**EasyScreenCast** adalah ekstensi di GNOME yang memungkinkan pengguna melakukan pengaturan lanjutan dari fitur perekaman layar yang tidak disediakan di antarmuka bawaan GNOME seperti merekam layar sekaligus mikrofon.
+**EasyScreenCast** adalah ekstensi di GNOME yang memungkinkan pengguna menggunakan fitur perekaman layar yang tidak disediakan di antarmuka bawaan GNOME seperti merekam layar sekaligus mikrofon.
 
 = EasyScreenCast memblokir login gnome-shell
 Setelah saya melakukan pembaharuan sistem, saya tidak dapat login ke GNOME melalui Wayland (layar berhenti di layar hitam dengan kursor yang tidak responsif) tetapi masalah ini tidak terjadi ketika login ke GNOME melalui X11. Kemudian saya menyadari bahwa biang keladi dari ini semua adalah ekstensi EasyScreenCast. Ekstensi ini entah bagaimana memblokir login ke `gnome-shell` di wayland.
