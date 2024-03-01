@@ -4,7 +4,7 @@
 Jika tombol muat ulang halaman atau `Ctrl + R` di peramban berfungsi semata untuk memuat ulang halaman. **//Hard refresh//** merujuk pada pemuatan ulang laman web dan menghapus cache laman web sehingga //hard refresh// memuat laman web yang benar-benar baru langsung dari peladen web.
 
 == Firefox (Windows/Linux/MacOS)
-Pengguna Firefox di Windows, Linux, atau MacOS dapat menggunakan pintasan papan tik berikut:
+Pengguna Firefox di Windows, Linux, atau macOS dapat menggunakan pintasan papan tik berikut:
 
 * `Ctrl/Cmd + Shift + R`
 * `Ctrl + Alt + F5`
